@@ -8,10 +8,10 @@ class Question
         @number1 = rand(1..20)
         @number2 = rand(1..20)
     end
-end
+
 
     # correct? method will check to see if the provided answer matches the sum of the two nums
-    def correct?
+    def correct?(answer)
         answer == @number1 + @number2
     end
 end
